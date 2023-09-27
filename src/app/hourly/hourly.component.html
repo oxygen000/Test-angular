@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+	<div class="hourly">
+		<div class="top">
+			<div class="title">
+				<h6>Hourly Sales</h6>
+			</div>
+		</div>
+		<canvas
+  baseChart
+  class="chart"
+  [data]="radarChartData"
+  [options]="radarChartOptions"
+  [type]="radarChartType"
+>
+</canvas>
+	</div>
+	<div class="titel-1">
+		<h2>Sales by Station</h2>
+		<div class="card">
+			<div class="row">
+				<div class="col"><img src=".//src/assets/gas-station-svgrepo-com.svg" alt=""></div>
+				<div class="col-5"><p class="station">Station Name</p></div>
+				<div class="col"><p class="nambar">62,72m</p></div>
+			</div>
+			<div class="row">
+				<div class="col-8"><div class="bar w3-round-xlarge ">
+					<div class=" w3-round-xlarge w3-orange w3-container  w3-center" style=" width: 25%; height: 6px;"></div>
+				  </div></div>
+			</div>
+		</div>
+		<div class="card mt-5">
+			<div class="row">
+				<div class="col"><img src=".//src/assets/gas-station-svgrepo-com.svg" alt=""></div>
+				<div class="col-5"><p class="station">Station Name</p></div>
+				<div class="col"><p class="nambar">62,72m</p></div>
+			</div>
+			<div class="row">
+				<div class="col-8"><div class="bar w3-round-xlarge ">
+					<div class=" w3-round-xlarge w3-orange w3-container  w3-center" style=" width: 25%; height: 6px;"></div>
+				  </div></div>
+			</div>
+		</div>
+		<div class="card mt-5">
+			<div class="row">
+				<div class="col"><img src=".//src/assets/gas-station-svgrepo-com.svg" alt=""></div>
+				<div class="col-5"><p class="station">Station Name</p></div>
+				<div class="col"><p class="nambar-2">NM</p></div>
+			</div>
+			<div class="row">
+				<div class="col-8"><div class=" mt-3 bar bar-2 w3-round-xlarge ">
+					<div class=" w3-round-xlarge w3-container  w3-center" style=" width: 25%; height: 6px;"></div>
+				  </div></div>
+			</div>
+		</div>
+	</div>
+</body>

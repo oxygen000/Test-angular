@@ -1,0 +1,468 @@
+* {
+    &::-webkit-scrollbar{
+        width: 0.5rem;
+        
+    }
+    
+    &::-webkit-scrollbar-track{
+        background: #F4DBD4  ;
+        border-radius: 60px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #FF7F5C;
+        border-radius: 60px;
+    }
+border: none;
+}
+
+
+.bar-2{
+    display: grid;
+    width: 1150px;
+    height: 400px;
+    overflow: auto;
+}
+nav{
+    margin-left: 450px;
+    border: none;
+
+
+}
+.tabs{
+    margin-top: 150px;
+    width: 850px;
+    height: 250px;
+    margin-left: -220px;
+}
+/* Component Needs */
+
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3 {
+  display: block;
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3 {
+  color: red;
+}
+
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.tab2{
+    margin-left: 40px;
+    margin-top: -40;
+}
+
+.pc-tab { 
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      label {
+        float: left;
+        display: flex;
+        padding: 15px 25px;
+        border-bottom: 0;
+        color: #444;
+        margin: 3px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        svg , a{
+            color: #000000;
+        }
+        &:hover {
+          background: #FF7F5C;
+          border-radius: 40%;
+        }
+        
+      }
+      &:not(:last-child) label {
+         border-right-width: 0; 
+      }
+    }
+  }
+  section {
+    clear: both;
+    div {
+      width: 100%;
+      line-height: 1.5em;
+      letter-spacing: 0.3px;
+      color: #444;
+      h2 {
+        margin: 0;
+        font-family: "Raleway";
+        letter-spacing: 1px;
+        color: #34495e;
+      }
+    }
+  }
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3 {
+  label {
+    background: #FF7F5C;
+    border-radius: 40%;
+    color: #111;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: -1px;
+    }
+  }
+}
+
+.tabs{
+    .card{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+.imge{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+margin-left: 20px;
+samp {
+    grid-column: 1;
+    width: 10px;
+    height: 10px;
+    background: #FF7F5C 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+img{
+    display: grid;
+    width: 53px;
+height: 43px;
+    grid-column: 1;
+}
+}
+.p1{
+    grid-column: 1;
+    margin-top: -30px;
+    margin-left: 60px;
+    width: 200px;
+    text-align: left;
+font: normal normal bold 18px/22px Montserrat;
+letter-spacing: 1.8px;
+color: #3D5161;
+text-transform: uppercase;
+}
+}
+.data{
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(2, 1fr);
+font-size: 12px;
+}
+
+
+.dropbtn {
+    display: grid;
+    grid-column: 2;
+    margin-top: -60px;
+    color: #FF7F5C;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 10px;
+    margin-left: 350px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    p{
+        color: #FF7F5C;
+    }
+  }
+  
+  .dropdown-content {
+    display: none;
+    align-items: center;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  input{
+    color: #FF7F5C;
+  }
+  .box-canter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: #FF7F5C;
+  }
+  .container {
+    color: #FF7F5C;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: solid 3px #FF7F5C;
+    border-radius: 10px;
+  }
+  
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #FF7F5C;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .dropdown-content a:hover
+   {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+   color: #FF7F5C;
+  }
+
+
+  $color-paid: #FF7F5C;
+$color-sent: #FF7F5C;
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "fira-sans-2", Verdana, sans-serif;
+}
+
+#q-graph {
+  display: block; /* fixes layout wonkiness in FF1.5 */
+  position: relative; 
+  width: 600px; 
+  height: 300px;
+  margin: 1.1em 0 0; 
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+}
+
+#q-graph caption {
+    margin-left: 40px;
+  caption-side: top; 
+  width: 400px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  top: -40px;
+  position: relative; 
+  z-index: 10;
+  font-weight: bold;
+}
+
+#q-graph tr, #q-graph th, #q-graph td { 
+  position: absolute;
+  bottom: 0; 
+  width: 150px; 
+  z-index: 2;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+#q-graph td {
+  transition: all .3s ease;
+  
+  &:hover {
+    background-color: desaturate(#85144b, 100);
+    opacity: .9;
+    color: white;
+  }
+}
+  
+#q-graph thead tr {
+  left: 100%; 
+  top: 50%; 
+  bottom: auto;
+  margin: -2.5em 0 0 5em;}
+#q-graph thead th {
+  width: 7.5em; 
+  height: auto; 
+  padding: 0.5em 1em;
+}
+#q-graph thead th.sent {
+  top: 0; 
+  left: 0; 
+  line-height: 2;
+}
+#q-graph thead th.paid {
+  top: 2.75em; 
+  line-height: 2;
+  left: 0; 
+}
+
+#q-graph tbody tr {
+  height: 296px;
+  padding-top: 2px;
+  border-right: 1px dotted #C4C4C4; 
+  color: #AAA;
+}
+#q-graph #q1 {
+  left: 0;
+}
+#q-graph #q2 {left: 150px;}
+#q-graph #q3 {left: 300px;}
+#q-graph #q5 {left: 600px;}
+#q-graph #q4 {left: 450px; border-right: none;}
+#q-graph tbody th {bottom: -1.75em; vertical-align: top;
+font-weight: normal; color: #333;}
+#q-graph .bar {
+  width: 60px; 
+  border: 1px solid; 
+  border-bottom: none; 
+  color: #000;
+}
+#q-graph .bar p {
+  margin: 5px 0 0; 
+  padding: 0;
+  opacity: .4;
+}
+#q-graph .sent {
+  left: 13px; 
+  background-color: $color-sent;
+  border-color: transparent;
+}
+#q-graph .paid {
+  left: 77px; 
+  background-color: $color-paid;
+  border-color: transparent;
+}
+
+
+#ticks {
+  position: relative; 
+  top: -300px; 
+  left: 2px;
+  width: 596px; 
+  height: 300px; 
+  z-index: 1;
+  margin-bottom: -300px;
+  font-size: 10px;
+  font-family: "fira-sans-2", Verdana, sans-serif;
+}
+
+#ticks .tick {
+  position: relative; 
+  border-bottom: 1px dotted #C4C4C4; 
+  width: 600px;
+}
+
+#ticks .tick p {
+  position: absolute; 
+  left: -5em; 
+  top: -0.8em; 
+  margin: 0 0 0 0.5em;
+}
+
+.lest{
+  display: flex;
+  margin-left: 450px;
+  margin-top: -80px;
+ a{
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: left;
+font: normal normal bold 14px/18px Montserrat;
+letter-spacing: 0px;
+color: #3D5161;
+text-transform: uppercase;
+opacity: 1;
+ }
+ &:hover{
+  color: #FF7F5C;
+ }
+ .orerg{
+  color: #FF7F5C;
+  text-decoration: none;
+ }
+ hr{
+  margin-top: 5px;
+  color: #FF7F5C;
+  background: #FF7F5C;
+ 
+ }
+}
