@@ -44,6 +44,7 @@ body {
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1);
+   
 
     .img {
         display: grid;
@@ -51,8 +52,17 @@ body {
         grid-row: 1;
         grid-column: 1;
         align-items: end;
+        
+        
 
         img {
+            grid-row: 1;
+            grid-column: 2;
+            width: 39px;
+            height: 32px;
+            margin-right: 12px;
+        }
+        sav{
             grid-row: 1;
             grid-column: 2;
             width: 39px;
